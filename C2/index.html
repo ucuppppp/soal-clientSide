@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2. Compare Image</title>
+    <style>
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            position: relative;
+            margin: auto;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            height: 900px;
+        }
+
+        .grayscale {
+            height: 375px;
+            width: 300px;
+            position: absolute;
+            top: 2;
+            border-right: solid 2px white;
+            overflow: hidden;
+        }
+
+        .grayscale img{
+            filter: grayscale(100%);
+        }
+        
+        #slider{
+            position: absolute;
+            -webkit-appearance: none;
+            width: 620px;
+            height: 370px;
+            margin-left: -10px;
+            z-index: 100;
+            background: none;
+            overflow: hidden;
+        }
+
+        #slider::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            cursor:ew-resize;
+            background: white;
+            border-radius: 50%;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="range" name="slider" id="slider" oninput="checkGray(this)">
+        <div class="grayscale" id="grayscale">
+            <img src="bg.jpg" alt="img" width="600">
+        </div>
+        <img src="bg.jpg" alt="img" width="600">
+    </div>
+        <script>
+            function checkGray(el){
+                document.getElementById('grayscale').style.width = el.value/100 * 600 + 'px';
+
+                // console.log(el.value/100 * 600)      
+        }
+    </script>
+</body>
+</html>

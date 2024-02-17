@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart with Chart JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script>
+        // Ambil referensi ke elemen canvas
+        var ctx = document.getElementById('myChart').getContext('2d');
+      
+        // Data untuk grafik
+        var data = {
+          labels: ['Label1', 'Label2', 'Label3', 'Label4', 'Label5'],
+          datasets: [{
+            label: 'ChartJS Line',
+            borderColor: 'rgb(75, 192, 192)',
+            data: [12, 19, 3, 5, 2],
+            fill: false,
+          }]
+        };
+      
+        // Konfigurasi grafik
+        var config = {
+          type: 'line',
+          data: data,
+        };
+      
+        // Buat dan tampilkan grafik
+        var myChart = new Chart(ctx, config);
+      </script>
+      
+</body>
+</html>

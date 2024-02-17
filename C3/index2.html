@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Element</title>
+    <style>
+        #box {
+            position: absolute;
+            cursor: move;
+            user-select: none;
+            /* user-select: none mencegah teks di dalam elemen dari terpilih saat drag */
+        }
+    </style>
+</head>
+<body>
+
+<div id="box" onmousedown="startDrag(event)">Drag me!</div>
+
+<script>
+    function startDrag(e) {
+        e.preventDefault();
+
+        // Inisialisasi posisi awal mouse dan elemen yang digeser
+        var startX = e.clientX;
+        var startY = e.clientY;
+        var box = document.getElementById("box");
+        var boxStartX = box.offsetLeft;
+        var boxStartY = box.offsetTop;
+
+        function dragMove(e) {
+            // Hitung perubahan posisi mouse
+            var deltaX = e.clientX - startX;
+            var deltaY = e.clientY - startY;
+
+            // Terapkan perubahan posisi pada elemen
+            box.style.left = boxStartX + deltaX + "px";
+            box.style.top = boxStartY + deltaY + "px";
+        }
+
+        function dragEnd() {
+            // Hapus event listeners setelah drag selesai
+            document.removeEventListener("mousemove", dragMove);
+            document.removeEventListener("mouseup", dragEnd);
+        }
+
+        // Tambahkan event listeners untuk mouse move dan mouse up
+        document.addEventListener("mousemove", dragMove);
+        document.addEventListener("mouseup", dragEnd);
+    }
+</script>
+
+</body>
+</html>

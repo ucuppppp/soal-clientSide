@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1. Masonry Layout</title>
+    <style>
+        .container{
+            height: 100vh;
+            /* width: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .wrapper{
+             width: 960px;
+             height: 960px;
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             gap: 0 1.2rem;
+        }
+
+        .container-column1{
+            display: grid;;
+            gap: 1.2rem;
+            grid-template-rows: 35% 20% 25%;
+        }
+        .container-column2{
+            display: grid;
+            gap: 1.2rem;
+            grid-template-rows: 20% 35% 25% ;
+        }
+        .container-column3{
+            display: grid;
+            gap: 1.2rem;
+            grid-template-rows: 25% 20% 35%;
+        }
+
+        .column{
+            width: 100%;
+            background-color: #aaa;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="container-column1">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="container-column2">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="container-column3">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

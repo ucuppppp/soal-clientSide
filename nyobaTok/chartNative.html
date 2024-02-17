@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafik Garis Tanpa Library</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+</style>
+<body>
+
+  <canvas id="myChart" width="600" height="400"></canvas>
+
+  <script>
+    var canvas = document.getElementById('myChart');
+    var ctx = canvas.getContext('2d');
+
+    // Menggambar sumbu X dan Y
+    ctx.beginPath();
+    ctx.moveTo(50, 10);
+    ctx.lineTo(50, 190);
+    ctx.lineTo(350, 190);
+    ctx.stroke();
+
+    // Menambahkan indikator angka pada sumbu Y
+    ctx.font = "12px Arial";
+    ctx.textAlign = "right";
+    ctx.textBaseline = "middle";
+
+    for (var i = 0; i <= 20; i += 5) {
+      var y = 190 - i * 10;
+      ctx.fillText(i.toString(), 40, y);
+    }
+
+    // Data untuk grafik
+    var labels = ['Label1', 'Label2', 'Label3', 'Label4', 'Label5'];
+    var data = [12, 19, 3, 5, 2];
+
+    // Menggambar titik-titik dan garis grafik
+    ctx.beginPath();
+    for (var i = 0; i < labels.length; i++) {
+      var x = 50 + i * 60;
+      var y = 190 - data[i] * 10;
+
+      // Menggambar titik
+      ctx.arc(x, y, 5, 0, 2 * Math.PI);
+      ctx.fillStyle = 'blue';
+    //   ctx.fill();
+
+      // Menambahkan label
+      ctx.fillStyle = 'black';
+      ctx.fillText(labels[i], x - 20, 200);
+
+      // Menggambar garis
+      if (i > 0) {
+        ctx.beginPath();
+        ctx.moveTo(x - 60, prevY);
+        ctx.lineTo(x, y);
+        ctx.strokeStyle = 'green';
+        ctx.stroke();
+      }
+
+      var prevY = y;
+    }
+  </script>
+</body>
+</html>
