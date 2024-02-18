@@ -1,0 +1,174 @@
+{
+  "name": "Bot",
+  "type": "bot_chat",
+  "messages": [
+    {
+      "type": "message",
+      "date": "2022-10-21T10:33:32",
+      "date_unixtime": "1666198532",
+      "from": "Budi",
+      "text": "Ai, Hello"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-21T12:05:45",
+      "date_unixtime": "1666250745",
+      "from": "Budi",
+      "text": "I'm fine, thank you. And you?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-21T13:20:11",
+      "date_unixtime": "1666255211",
+      "from": "Budi",
+      "text": "I'm working on a project. How about you?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-21T14:30:25",
+      "date_unixtime": "1666259425",
+      "from": "Bot",
+      "text": "I'm here to assist you. What project are you working on?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-21T15:12:50",
+      "date_unixtime": "1666262770",
+      "from": "Budi",
+      "text": "I'm working on a website for a client."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-21T16:05:30",
+      "date_unixtime": "1666266330",
+      "from": "Bot",
+      "text": "That sounds interesting. Do you need any help with the website?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-21T17:20:15",
+      "date_unixtime": "1666270415",
+      "from": "Budi",
+      "text": "I'm good for now, thanks. I'll let you know if I need assistance."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T09:45:00",
+      "date_unixtime": "1666332300",
+      "from": "Bot",
+      "text": "Good morning! How's the website project going?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T10:20:30",
+      "date_unixtime": "1666334430",
+      "from": "Budi",
+      "text": "Good morning! It's going well. I'm adding some new features."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T11:15:10",
+      "date_unixtime": "1666337710",
+      "from": "Bot",
+      "text": "Great to hear that! If you need any advice on the features, feel free to ask."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T12:30:45",
+      "date_unixtime": "1666341645",
+      "from": "Budi",
+      "text": "Thanks! I'll keep that in mind."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T14:00:20",
+      "date_unixtime": "1666346420",
+      "from": "Bot",
+      "text": "You're welcome. Let me know if there's anything else I can help with."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T15:10:55",
+      "date_unixtime": "1666350655",
+      "from": "Budi",
+      "text": "Sure, thanks!"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T16:25:30",
+      "date_unixtime": "1666355130",
+      "from": "Bot",
+      "text": "How's the progress on the website?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T17:00:00",
+      "date_unixtime": "1666357200",
+      "from": "Budi",
+      "text": "It's coming along nicely. I've almost finished implementing the new features."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-22T18:10:45",
+      "date_unixtime": "1666361445",
+      "from": "Bot",
+      "text": "That's great to hear! I'm sure your client will be pleased."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-23T09:00:15",
+      "date_unixtime": "1666414815",
+      "from": "Bot",
+      "text": "Good morning! Is the website project completed?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-23T09:30:30",
+      "date_unixtime": "1666416630",
+      "from": "Budi",
+      "text": "Good morning! Yes, it's finished. I'll be presenting it to the client today."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-23T10:20:55",
+      "date_unixtime": "1666419655",
+      "from": "Bot",
+      "text": "That's wonderful news! I'm sure they'll be impressed with your work."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-23T11:45:30",
+      "date_unixtime": "1666424730",
+      "from": "Budi",
+      "text": "Thank you! I hope so too."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-23T13:00:00",
+      "date_unixtime": "1666429200",
+      "from": "Bot",
+      "text": "Let me know how it goes. I'm sure it'll be a success!"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-24T08:30:25",
+      "date_unixtime": "1666491025",
+      "from": "Bot",
+      "text": "Good morning! How did the presentation go?"
+    },
+    {
+      "type": "message",
+      "date": "2022-10-24T09:15:50",
+      "date_unixtime": "1666493750",
+      "from": "Budi",
+      "text": "I'm very happy with the presentation. I'll be presenting it to the client tomorrow."
+    },
+    {
+      "type": "message",
+      "date": "2022-10-24T10:00:00",
+      "date_unixtime": "1666496000",
+      "from": "Bot",
+      "text": "That's great news! I'm sure they'll be impressed with your work."
+    }
+  ]
+}
